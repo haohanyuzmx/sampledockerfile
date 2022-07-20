@@ -12,4 +12,5 @@ func main() {
 		return
 	}
 	fmt.Println("ok")
+	fmt.Println("what")
 }
