@@ -1,12 +1,14 @@
 package main
 
 import (
-	"net"
+	"fmt"
+	"net/http"
 )
 
 func main() {
-	_, err := net.Dial("tcp", "baidu.com")
+	_, err := http.Get("http://baidu.com")
 	if err != nil {
+		fmt.Println(err)
 		return
 	}
 }
